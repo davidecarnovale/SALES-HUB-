@@ -1,0 +1,13 @@
+name = "sales-hub"
+client_id = "60e9913f2e9f3270fe3d47c96ef67291"
+application_url = "https://sales-hub.example.com"
+embedded = true
+
+[access_scopes]
+scopes = "read_products,read_customers,read_companies,write_draft_orders,read_draft_orders,read_orders"
+
+[auth]
+redirect_urls = [ "https://sales-hub.example.com/auth/callback" ]
+
+[webhooks]
+api_version = "2025-01"

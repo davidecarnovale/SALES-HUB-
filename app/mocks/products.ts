@@ -1,0 +1,55 @@
+import type { ShopifyProduct } from "~/types";
+
+export const products: ShopifyProduct[] = [
+  {
+    id: "prod-1",
+    title: "Air Max 2026",
+    sku: "NK-AM26",
+    vendor: "Nike",
+    seasonValue: "fall-2026",
+    productType: "Sneaker",
+    gender: "Uomo",
+    price: 89,
+    variants: ["40", "41", "42", "43", "44", "45"].map((size) => ({
+      id: `prod-1-${size}`,
+      title: size,
+      sku: `NK-AM26-${size}`,
+      price: 89,
+      available: true,
+    })),
+  },
+  {
+    id: "prod-2",
+    title: "Zoom Pegasus",
+    sku: "NK-ZP24",
+    vendor: "Nike",
+    seasonValue: "fall-2026",
+    productType: "Sneaker",
+    gender: "Uomo",
+    price: 79,
+    variants: ["40", "41", "42", "43", "44"].map((size) => ({
+      id: `prod-2-${size}`,
+      title: size,
+      sku: `NK-ZP24-${size}`,
+      price: 79,
+      available: true,
+    })),
+  },
+  {
+    id: "prod-3",
+    title: "Dri-FIT T-Shirt",
+    sku: "NK-TS04",
+    vendor: "Nike",
+    seasonValue: "fall-2026",
+    productType: "Abbigliamento",
+    gender: "Uomo",
+    price: 35,
+    variants: ["S", "M", "L", "XL"].map((size) => ({
+      id: `prod-3-${size}`,
+      title: size,
+      sku: `NK-TS04-${size}`,
+      price: 35,
+      available: true,
+    })),
+  },
+];
