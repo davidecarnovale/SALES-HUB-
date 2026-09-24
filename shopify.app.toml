@@ -1,5 +1,4 @@
 name = "sales-hub"
-client_id = "60e9913f2e9f3270fe3d47c96ef67291"
 embedded = true
 
 [build]
