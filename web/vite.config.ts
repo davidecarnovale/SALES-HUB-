@@ -6,5 +6,8 @@ export default defineConfig({
   plugins: [remix(), tsconfigPaths()],
   server: {
     port: Number(process.env.PORT || 3000),
+    // Shopify's tunnel serves the app from a *.trycloudflare.com host;
+    // Vite must accept requests coming in on that host, not just localhost.
+    allowedHosts: true,
   },
 });
