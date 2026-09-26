@@ -1,5 +1,6 @@
 name = "sales-hub"
 client_id = "4e7be3aeb945ffb02e1605f2fbbcac24"
+application_url = "https://sales-hub.example.com"
 embedded = true
 
 [build]
@@ -7,6 +8,9 @@ automatically_update_urls_on_dev = true
 
 [access_scopes]
 scopes = "read_products,read_customers,read_companies,write_draft_orders,read_draft_orders,read_orders"
+
+[auth]
+redirect_urls = [ "https://sales-hub.example.com/auth/callback" ]
 
 [webhooks]
 api_version = "2025-01"
